@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Outfit:wght@300&family=Overpass:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Overpass';
+}
+
+main{
+    background-color: hsl(216, 12%, 8%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-wrapper{
+    background: hsl(213, 19%, 18%);
+    padding: 2em;
+    border-radius: 20px;
+}
+.numbers{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+h1, p, .numbers, .submit{
+    margin-top: 0.75em;
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+p{
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.5;
+    color: hsl(217, 12%, 63%);
+}
+
+
+/*
+    ========components
+*/
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+svg{
+    border-radius: 100%;
+    padding: 1em;
+    box-sizing: content-box;
+    background-color: hsl(216, 12%, 54%);
+}
+.submit{
+    border-radius: 25px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border-color: transparent;
+    padding: 1em;
+    margin: 2.5em 0 1em 0;
+    transition: all 0.2s ease-in;
+}
+
+.submit:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+#TyState{
+    display: none;
+    text-align: center;
+}
+/*
+    =========Thank you state
+*/
+#yourating{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(216, 12%, 54%);
+    border-radius: 25px;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+}
+#tycard{
+    align-items: center;
+}
+.thanks{
+    background-color: hsl(213, 19%, 18%);
+}
