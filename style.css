@@ -7,14 +7,14 @@
 }
 
 main{
-    background-color: hsl(216, 12%, 8%);
+    background-color: black;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .card-wrapper{
-    background: hsl(213, 19%, 18%);
+    background: hsl(216, 12%, 8%);
     padding: 2em;
     border-radius: 20px;
 }
@@ -36,7 +36,6 @@ h1{
 p{
     font-size: 15px;
     font-weight: 400;
-    opacity: 0.5;
     color: hsl(217, 12%, 63%);
 }
 /*
@@ -123,7 +122,10 @@ svg{
     opacity: 2;
     background-color: hsl(213, 19%, 18%);
     border-radius: 25px;
-    padding: 0.75em;
+    padding-right: 0.7em;
+    padding-left: 0.7em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
 }
 #yourating{
     padding: 0.2em;
@@ -135,5 +137,5 @@ svg{
     line-height: 1.5em;
 }
 .thanks{
-    background-color: hsl(213, 19%, 18%);
+    background-color: hsl(216, 12%, 8%);
 }
